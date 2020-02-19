@@ -78,6 +78,7 @@ body {
   
   /* back of the card */
   .flip-card-back {
+    padding: 1em;
     text-align: center;
     background-color: #190061;
     color: #EAF4D3;
