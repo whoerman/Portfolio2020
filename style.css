@@ -47,7 +47,7 @@ body {
     background-color: transparent;
     width: 300px;
     height: 300px;
-    border: 2px solid #190061;
+    border: 2px solid #190061; /* border to make sure the cards are ligned up */
     perspective: 1000px; /* allows the the 3D effect */
   }
   
@@ -78,6 +78,7 @@ body {
   
   /* back of the card */
   .flip-card-back {
+    text-align: center;
     background-color: #190061;
     color: #EAF4D3;
     transform: rotateY(180deg);
