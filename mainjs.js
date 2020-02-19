@@ -1,5 +1,29 @@
-//defining the variable for animation end signal for animate.css
-var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
-//defining the variables for animations to be used for animate.css
-var animationShake = "animated shake";
+$(document).ready(function(){
+    $('.your-class').slick({
+        centerMode: true,
+        arrows: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: true,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: true,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+  });

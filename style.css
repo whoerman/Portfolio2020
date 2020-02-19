@@ -7,81 +7,84 @@ body {
   flex: content;
 }
 
-.header{
-    background-color:#190061;
-    padding: 0em;
-    margin: 0em;
+.header {
+  background-color: #190061;
+  padding: 0em;
+  margin: 0em;
 }
 
 .nameHeader {
-    font-family: Roboto, Open Sans;
-    color: #EAF4D3;
+  font-family: Roboto, Open Sans;
+  color: #EAF4D3;
 }
 
 .lead {
-    font-family: Roboto, Open Sans;
-    color: #EAF4D3;
-    font-size: 1em;
+  font-family: Roboto, Open Sans;
+  color: #EAF4D3;
+  font-size: 1em;
 }
 
 .headshot {
-    margin: 0em;
-    padding-right: 1em;
-    padding: 0em;
+  margin: 0em;
+  padding-right: 1em;
+  padding: 0em;
 }
 
 .choiceHeader {
-    color: #EAF4D3;
-    text-shadow: 2px 2px #190061;
+  color: #EAF4D3;
+  text-shadow: 2px 2px #190061;
 }
 
 .menu {
-    font-family: Roboto, Open Sans;
-    font-size: 1.3em;
-    color: #EAF4D3;
+  font-family: Roboto, Open Sans;
+  font-size: 1.3em;
+  color: #EAF4D3;
 }
 
+/* Flip cards for the index page */
 
 /* The flip card container*/
 .flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 300px;
-    border: 2px solid #190061; /* border to make sure the cards are ligned up */
-    perspective: 1000px; /* allows the the 3D effect */
-  }
-  
-  /* This container is needed to position the front and back side */
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  /*horizontal flip when mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  
-  
-  /* back of the card */
-  .flip-card-back {
-    padding: 1em;
-    text-align: center;
-    background-color: #190061;
-    color: #EAF4D3;
-    transform: rotateY(180deg);
-  }
-  
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border: 2px solid #190061;
+  /* border to make sure the cards are ligned up */
+  perspective: 1000px;
+  /* allows the the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/*horizontal flip when mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+/* back of the card */
+.flip-card-back {
+  padding: 1em;
+  text-align: center;
+  background-color: #190061;
+  color: #EAF4D3;
+  transform: rotateY(180deg);
+}
