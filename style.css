@@ -31,14 +31,22 @@ body {
 }
 
 .choiceHeader {
-  color: #EAF4D3;
-  text-shadow: 2px 2px #190061;
+  color: #e5e4e2;
+  text-shadow: 2px 3px #000000;
 }
 
 .menu {
   font-family: Roboto, Open Sans;
   font-size: 1.3em;
   color: #EAF4D3;
+}
+
+.infoDiv {
+  background-color: #00000055;
+}
+
+.opening {
+  font-size: 1.2em;
 }
 
 /* Flip cards for the index page */
